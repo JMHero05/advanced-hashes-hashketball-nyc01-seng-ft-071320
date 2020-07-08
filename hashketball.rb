@@ -227,9 +227,9 @@ def big_shoe_rebounds
     else
       winner = game_hash[:away][:team_name]
     end
-    binding.pry
   end
   winner
+  binding.pry
 end
 
 # !!!!!!BONUS QUESTIONS!!!!!!
