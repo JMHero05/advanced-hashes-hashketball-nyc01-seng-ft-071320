@@ -208,8 +208,8 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  most_points = 0
-  most_player = ""
+  home_points = 0
+  away_points = 0
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if attribute == :players
