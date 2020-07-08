@@ -246,6 +246,25 @@ def most_points_scored
   most_player
 end
 
+def winning_team
+  home_points = 0
+  away_points = 0
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |player|
+          if player[:points] > most_points
+            most_points = player[:points]
+            most_player = player[:player_name]
+          end
+        end
+      end
+    end
+  end
+  most_player
+  binding.pry
+end
+
 # def big_shoe_rebounds
 #   big_shoe = 0
 #   rebound_num = 0
