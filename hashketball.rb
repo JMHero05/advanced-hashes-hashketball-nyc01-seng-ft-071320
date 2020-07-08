@@ -208,30 +208,15 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  home_points = 0
-  away_points = 0
-  winner = ""
   game_hash.each do |location, team_data|
-    if location == :home
-      team_data[:players].each do |data|
-        home_points += data[:points]
-      end
-    end
-    if location == :away
-      team_data[:players].each do |data|
-        away_points += data[:points]
-      end
-    end
-    if home_points > away_points
-      winner = game_hash[:home][:team_name]
-    else
-      winner = game_hash[:away][:team_name]
+    team_data.each do |attribute, data|
     end
   end
-  winner
 end
 
 # !!!!!!BONUS QUESTIONS!!!!!!
+
+# This code is super wet, but my brain was mush at this point.
 
 def most_points_scored
   most_points = 0
@@ -276,7 +261,7 @@ def winning_team
 end
 
 def player_with_longest_name
-
+  
 end
 
 # def big_shoe_rebounds
