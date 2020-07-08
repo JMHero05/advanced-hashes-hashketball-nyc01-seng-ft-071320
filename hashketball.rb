@@ -212,7 +212,7 @@ def big_shoe_rebounds
   away_points = 0
   game_hash.each do |location, team_data|
     if location == :home
-      team_data[:players] do |data, points|
+      team_data do |data, points|
         binding.pry
       end
     end
