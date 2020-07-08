@@ -228,6 +228,7 @@ def big_shoe_rebounds
   else
     winner = away_points
   end
+  winner
 end
 
 # !!!!!!BONUS QUESTIONS!!!!!!
