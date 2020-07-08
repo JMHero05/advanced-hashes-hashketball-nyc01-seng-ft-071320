@@ -250,9 +250,9 @@ def winning_team
   home_points = 0
   away_points = 0
   game_hash.each do |location, team_data|
-
+    binding.pry
   end
-  binding.pry
+  # binding.pry
 end
 
 # def big_shoe_rebounds
