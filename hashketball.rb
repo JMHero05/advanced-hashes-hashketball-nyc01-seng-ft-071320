@@ -222,7 +222,11 @@ def big_shoe_rebounds
       end
     end
   end
-  binding.pry
+  if home_points > away_points
+    home_points
+  else
+    away_points
+  end
 end
 
 # !!!!!!BONUS QUESTIONS!!!!!!
