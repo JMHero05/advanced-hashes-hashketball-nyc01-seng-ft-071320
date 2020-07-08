@@ -226,7 +226,7 @@ def big_shoe_rebounds
   if home_points > away_points
     winner = home_points
   else
-    away_points
+    winner = away_points
   end
 end
 
