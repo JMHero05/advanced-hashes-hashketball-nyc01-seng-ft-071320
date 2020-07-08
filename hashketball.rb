@@ -216,6 +216,11 @@ def big_shoe_rebounds
         home_points += data[:points]
       end
     end
+    if location == :away
+      team_data[:players].each do |data|
+        away_points += data[:points]
+      end
+    end
   end
   binding.pry
 end
