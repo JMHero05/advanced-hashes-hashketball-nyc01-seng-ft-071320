@@ -229,7 +229,6 @@ def big_shoe_rebounds
     end
   end
   winner
-  binding.pry
 end
 
 # !!!!!!BONUS QUESTIONS!!!!!!
