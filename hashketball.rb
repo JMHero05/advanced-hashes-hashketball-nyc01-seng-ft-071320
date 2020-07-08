@@ -223,7 +223,7 @@ def big_shoe_rebounds
       end
     end
     if home_points > away_points
-      winner = home_points
+      winner = game_hash[:home][:team_name]
     else
       winner = away_points
     end
