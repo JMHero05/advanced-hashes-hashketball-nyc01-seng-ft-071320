@@ -225,7 +225,7 @@ def big_shoe_rebounds
     if home_points > away_points
       winner = game_hash[:home][:team_name]
     else
-      winner = away_points
+      winner = game_hash[:away][:team_name]
     end
     binding.pry
   end
