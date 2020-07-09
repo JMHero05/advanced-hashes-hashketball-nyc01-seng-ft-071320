@@ -219,17 +219,12 @@ def big_shoe_rebounds
           end
           if name[:steals] > most_steals
             most_steals = name[:steals]
-            # binding.pry
           end
         end
       end
-      game_hash.all? do |stole|
-        stole[:player_name] == longest_name
-        stole[:steals] == most_steals
-        binding.pry
-      end
     end
   end
+  binding.pry
 end
 
 # !!!!!!BONUS QUESTIONS!!!!!!
