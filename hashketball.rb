@@ -224,6 +224,7 @@ def big_shoe_rebounds
       end
     end
   end
+  game_hash.all?
   binding.pry
 end
 
