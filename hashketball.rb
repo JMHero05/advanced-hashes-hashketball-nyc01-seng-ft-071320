@@ -287,6 +287,8 @@ def player_with_longest_name
   longest_name
 end
 
+# !!!!!SUPER BONUS QUEST!!!!
+
 def long_name_steals_a_ton
   longest_name = ""
   most_steals = 0
@@ -301,14 +303,11 @@ def long_name_steals_a_ton
           if stat[:steals] > most_steals
             most_steals = name[:steals]
           end
-          if stat[:player_name] &&
-            
-          end
+          # This is as far as I could get after awhile.  I think if I
+          # dried up the code and found a way to compare stats, that would
+          # be best.  But, I'm done.  Need a break.
         end
       end
     end
-  end
-  if longest_name == most_steals
-    is_this_right = true
   end
 end
