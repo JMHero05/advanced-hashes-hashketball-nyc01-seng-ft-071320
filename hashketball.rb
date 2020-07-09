@@ -223,7 +223,7 @@ def big_shoe_rebounds
           end
         end
       end
-      data.all? |stole|
+      data.all? do |stole|
           binding.pry
       end
     end
