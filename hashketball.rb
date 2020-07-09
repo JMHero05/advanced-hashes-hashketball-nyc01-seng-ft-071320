@@ -219,6 +219,9 @@ def big_shoe_rebounds
           end
           if name[:steals] > most_steals
             most_steals = name[:steals]
+            # binding.pry
+          end
+          if data.all? |stole|
             binding.pry
           end
         end
