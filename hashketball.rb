@@ -215,7 +215,7 @@ def big_shoe_rebounds
     team_data.each do |attribute, data|
       if attribute == :players
         data.each do |name|
-          when name[:player_name].length > longest_name.length
+          if name[:player_name].length > longest_name.length
             longest_name = name[:player_name]
           end
           if name[:steals] > most_steals
