@@ -221,6 +221,9 @@ def big_shoe_rebounds
             most_steals = name[:steals]
             # binding.pry
           end
+          data.all? do |stole|
+            binding.pry
+          end
         end
       end
     end
