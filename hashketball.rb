@@ -224,7 +224,9 @@ def big_shoe_rebounds
       end
     end
   end
-  game_hash.all?
+  if longest_name == most_steals
+    
+  end
   binding.pry
 end
 
