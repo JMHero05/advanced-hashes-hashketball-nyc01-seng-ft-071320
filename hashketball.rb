@@ -222,6 +222,7 @@ def big_shoe_rebounds
             # binding.pry
           end
           data.all? do |stole|
+            stole[:player_name] == longest_name
             binding.pry
           end
         end
