@@ -288,11 +288,6 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton
-  player_with_longest_name
-  binding.pry
-end
-
-def big_shoe_rebounds
   longest_name = ""
   most_steals = 0
   is_this_right = false
