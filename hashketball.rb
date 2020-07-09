@@ -210,6 +210,7 @@ end
 def big_shoe_rebounds
   longest_name = ""
   most_steals = 0
+  is_this_right = false
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if attribute == :players
@@ -225,7 +226,7 @@ def big_shoe_rebounds
     end
   end
   if longest_name == most_steals
-    return true
+    is_this_right = true
   end
   binding.pry
 end
