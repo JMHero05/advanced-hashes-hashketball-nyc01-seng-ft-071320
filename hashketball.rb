@@ -225,7 +225,7 @@ def big_shoe_rebounds
     end
   end
   if longest_name == most_steals
-    
+    return true
   end
   binding.pry
 end
