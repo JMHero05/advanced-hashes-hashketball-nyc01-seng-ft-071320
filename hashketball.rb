@@ -287,7 +287,7 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton
-
+  player_with_longest_name
 end
 # def big_shoe_rebounds
 #   big_shoe = 0
