@@ -208,27 +208,21 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  longest_name = ""
-  most_steals = 0
-  is_this_right = false
+  big_shoe = 0
+  rebound_num = 0
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if attribute == :players
-        data.each do |name|
-          if name[:player_name].length > longest_name.length
-            longest_name = name[:player_name]
-          end
-          if name[:steals] > most_steals
-            most_steals = name[:steals]
+        data.each do |player|
+          if player[:shoe] > big_shoe
+            big_shoe = player[:shoe]
+            rebound_num = player[:rebounds]
           end
         end
       end
     end
   end
-  if longest_name == most_steals
-    is_this_right = true
-  end
-  binding.pry
+  rebound_num
 end
 
 # !!!!!!BONUS QUESTIONS!!!!!!
@@ -297,20 +291,29 @@ def long_name_steals_a_ton
   player_with_longest_name
   binding.pry
 end
-# def big_shoe_rebounds
-#   big_shoe = 0
-#   rebound_num = 0
-#   game_hash.each do |location, team_data|
-#     team_data.each do |attribute, data|
-#       if attribute == :players
-#         data.each do |player|
-#           if player[:shoe] > big_shoe
-#             big_shoe = player[:shoe]
-#             rebound_num = player[:rebounds]
-#           end
-#         end
-#       end
-#     end
-#   end
-#   rebound_num
-# end
+
+def big_shoe_rebounds
+  longest_name = ""
+  most_steals = 0
+  is_this_right = false
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |stat|
+          if stat[:player_name].length > longest_name.length
+            longest_name = name[:player_name]
+          end
+          if stat[:steals] > most_steals
+            most_steals = name[:steals]
+          end
+          if stat[:player_name] &&
+            
+          end
+        end
+      end
+    end
+  end
+  if longest_name == most_steals
+    is_this_right = true
+  end
+end
