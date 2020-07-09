@@ -220,7 +220,7 @@ def big_shoe_rebounds
           if name[:steals] > most_steals
             most_steals = name[:steals]
           end
-          name.all? do [longest_name, most_steals]
+          if name.all? { [longest_name, most_steals] }
 binding.pry
           end
         end
