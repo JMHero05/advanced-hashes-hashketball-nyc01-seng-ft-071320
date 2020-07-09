@@ -215,13 +215,13 @@ def big_shoe_rebounds
         data.each do |name|
           if name[:player_name].length > longest_name.length
             longest_name = name[:player_name]
-      binding.pry
           end
         end
       end
     end
   end
   longest_name
+  binding.pry
 end
 
 # !!!!!!BONUS QUESTIONS!!!!!!
