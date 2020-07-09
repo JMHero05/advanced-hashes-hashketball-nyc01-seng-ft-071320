@@ -210,7 +210,9 @@ end
 def big_shoe_rebounds
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
+      if attribute == :players
       binding.pry
+      end
     end
   end
 end
@@ -262,7 +264,7 @@ def winning_team
 end
 
 def player_with_longest_name
-  
+
 end
 
 # def big_shoe_rebounds
