@@ -218,7 +218,7 @@ def big_shoe_rebounds
             longest_name = name[:player_name]
           end
           if name[:steals] > most_steals
-
+            most_steals = name[:steals]
           end
         end
       end
