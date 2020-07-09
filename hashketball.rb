@@ -214,7 +214,7 @@ def big_shoe_rebounds
       if attribute == :players
         data.each do |name|
           if name[:player_name].length > longest_name.length
-            longest_name = name[:player_name].length
+            longest_name = name[:player_name]
       binding.pry
           end
         end
