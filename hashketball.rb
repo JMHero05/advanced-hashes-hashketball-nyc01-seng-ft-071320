@@ -225,6 +225,7 @@ def big_shoe_rebounds
     end
     if game_hash[location][team_data].all? { [longest_name, most_steals] }
       return true
+      binding.pry
     end
   end
 end
