@@ -208,8 +208,17 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  player_with_longest_name
-  binding.pry
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |name|
+          if name[:player_name].length > longest_name.length
+            longest_name = name[:player_name]
+          end
+        end
+      end
+    end
+  end
 end
 
 # !!!!!!BONUS QUESTIONS!!!!!!
